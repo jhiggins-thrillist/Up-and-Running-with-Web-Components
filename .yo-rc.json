@@ -1,0 +1,7 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "Web Components & Polymer: The Building Blocks of the Future Web",
+    "packageVersion": "0.0.0",
+    "useSass": true
+  }
+}
