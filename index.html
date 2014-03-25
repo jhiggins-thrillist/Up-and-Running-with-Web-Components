@@ -12,9 +12,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
         <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.min.css">
-    
+
         <link rel="stylesheet" href="css/theme.css" id="theme">
-    
+
 
         <!-- For syntax highlighting -->
         <link rel="stylesheet" href="bower_components/reveal.js/lib/css/zenburn.css" id="highlight-theme">
@@ -36,14 +36,16 @@
             <div class="slides">
 
                 
+
                     
                         
-    <section data-markdown="slides/00.md"></section>
+    <section data-state="checkSupport" data-markdown="slides/00.md"></section>
 
 
                     
                     
                 
+
                     
                     
                         <section>
@@ -66,6 +68,7 @@
                         </section>
                     
                 
+
                     
                     
                         <section>
@@ -83,6 +86,7 @@
                         </section>
                     
                 
+
                     
                     
                         <section>
@@ -98,13 +102,14 @@
 
                             
                                 
-    <section data-markdown="slides/03_03.md"></section>
+    <section data-state="example01" data-markdown="slides/03_03.md"></section>
 
 
                             
                         </section>
                     
                 
+
                     
                     
                         <section>
@@ -117,24 +122,39 @@
                         </section>
                     
                 
+
                     
                     
                         <section>
                             
                                 
-    <section data-markdown="slides/05_01.md"></section>
+    <section data-state="example02" data-markdown="slides/05_01.md"></section>
 
 
                             
                         </section>
                     
                 
+
                     
                     
                         <section>
                             
                                 
     <section data-markdown="slides/06_01.md"></section>
+
+
+                            
+                        </section>
+                    
+                
+
+                    
+                    
+                        <section>
+                            
+                                
+    <section data-markdown="slides/07_01.md"></section>
 
 
                             
@@ -171,7 +191,8 @@
                     // { src: 'bower_components/reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
                     //{ src: 'bower_components/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
 
-                    { src: 'js/loadhtmlslides.js', condition: function() { return !!document.querySelector( '[data-html]' ); } }
+                    { src: 'js/loadhtmlslides.js', condition: function() { return !!document.querySelector( '[data-html]' ); } },
+                    { src: 'js/main.js' }
                 ]
             });
         </script>
