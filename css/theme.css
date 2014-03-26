@@ -166,3 +166,8 @@ body {
     color: green; }
     #supported .supported:after {
       content: " \2713"; }
+
+.reveal .slides section .fragment.highlight-yellow {
+  opacity: 1; }
+  .reveal .slides section .fragment.highlight-yellow.visible {
+    color: #ffff32; }

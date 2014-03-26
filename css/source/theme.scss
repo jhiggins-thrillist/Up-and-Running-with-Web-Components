@@ -194,3 +194,12 @@ body {
   }
 
 }
+
+.reveal .slides section .fragment.highlight-yellow {
+
+  opacity: 1;
+
+  &.visible {
+    color: #ffff32;
+  }
+}
