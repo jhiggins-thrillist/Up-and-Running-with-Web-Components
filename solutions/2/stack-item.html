@@ -1,0 +1,30 @@
+<polymer-element name="stack-item" attributes="description city artemis_id">
+    <template>
+        <link rel="stylesheet" href="style.css">
+        <li class="stack-size-medium rs-item">
+            <a class="allied-tag" href="/editorialpolicy#allied"><span class="allied-tag">Allied</span></a>
+            <a class="item-link" href="INSERT LINK HERE">
+
+                <div class="img">
+                    <img src="http://assets3.thrillist.com/v1/image/{{artemis_id}}/size/tl-stack_medium">
+                </div>
+
+                <div class="item-description">
+                    <span class="type-label">{{city}}</span>
+                    <h2>{{description}}</h2>
+                </div>
+
+                <div class="item-score">
+                    <span class="item-more" href="INSERT LINK HERE">Read more</span>
+                </div>
+
+            </a>
+        </li>
+
+    </template>
+    <script>
+        Polymer('stack-item', {
+            description: "default"
+        });
+    </script>
+</polymer-element>
