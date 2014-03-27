@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <!-- Import tmg-button here -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="import" href="tmg-button.html">
+
+    </head>
+
+    <body>
+
+        <h1>Workshop #1 - Native Web Components</h1>
+
+        <p>Welcome to our first workshop! We will now be implementing features of our web component, the shiny &amp; new <code>&lt;tmg-button&gt;</code>.</p>
+
+        <h3>Tasks:</h3>
+        <ul>
+          <li>Modify the imported <code>tmg-button.html</code> so it generates HTML content from it's template. <strong>+1 point</strong></li>
+          <li>The textContent of <code>&lt;span id="#title"&gt;</code> in the custom element matches the title attribute of <code>&lt;tmg-button title=""&gt;.</code> <strong>(1 point)</strong></li>
+          <li>When the button is clicked, it should will alert its <code>content</code> attribute. <strong>(1 point)</strong></li>
+        </ul>
+
+        <h3>Deductions:</h3>
+        <ul>
+          <li>Using jQuery <strong>(-3 points)</strong></li>
+        </ul>
+
+        <tmg-button title="Hello, world!" content="This is a message."></tmg-button>
+
+        <hr />
+
+        <h3 class="extra-credit">Extra Credit:</h3>
+        <details>
+
+          <ul>
+            <li>
+              Add <code>Object.Observe()</code> functionality to the <code>&lt;tmg-button&gt;</code>. <strong>(2 points)</strong>
+              <ul>
+                <li>When the title attribute is changed in the Inspector, make sure it changes in the Shadow DOM.</li>
+              </ul>
+            </li>
+            <li>Have the select dropdown change the button's title text by using a <code>MutationObserver</code>. <strong>(2 points)</strong></li>
+          </ul>
+
+          <!-- Select box for MutationObserver -->
+          <div class="mutation-wrapper">
+            <select id="mutationField">
+              <option></option>
+              <option val="Howdy!">Howdy!</option>
+              <option val="Who's your Daddy?">Who's your Daddy?</option>
+              <option val="Mwahahhha">Mwahahhha</option>
+            </select>
+          </div>
+
+        </details>
+
+    </body>
+
+</html>

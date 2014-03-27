@@ -1,0 +1,128 @@
+<template id="tmg-button">
+
+  <style>
+
+    /* 5. Add custom styling for your tmg button */
+
+    * {
+        box-sizing: border-box;
+    }
+
+    :host {
+
+    }
+
+    span {
+
+    }
+
+    span:hover {
+
+    }
+
+  </style>
+
+  <!-- This span should contain the custom element's title attribute when rendered -->
+  <span id="title"></span>
+
+</template>
+
+<script>
+
+(function (window, document) {
+
+    'use strict';
+
+    // References this import document,
+    // It is just like window.document, except in the scope of this imported HTML
+    var currentDocument = document.currentScript.ownerDocument;
+
+    /**
+     * TMGButtonElement extends HTMLButtonElement
+     */
+    var TMGButtonElement = document.registerElement('tmg-button', {
+
+      prototype: Object.create(HTMLButtonElement.prototype, {
+
+        defaultTitle: {
+            value: 'TLButton'
+        },
+
+        defaultContent: {
+            value: 'You clicked me!'
+        },
+
+        /**
+         * Callback: createdCallback
+         */
+        createdCallback: {
+            value: function () {
+                // Stores reference to <template>
+                var template = currentDocument.getElementById('tmg-button');
+
+                /**
+                 * 1. Create a DOM node from our template by
+                 *    using document.importNode on our template variable.
+                 *
+                 *    Hint: https://developer.mozilla.org/en-US/docs/Web/API/document.importNode
+                 */
+
+                /**
+                 * 2. Modify the node's title to the custom element's title attribute,
+                 *    and fallback to this.defaultText if falsy.
+                 */
+
+                /**
+                 * 3. Create ShadowRoot and append the node to it.
+                 */
+
+            }
+        },
+
+        /**
+         * Handle click event
+         */
+        click: {
+            configurable: true,
+            writable: true,
+            value: function (e) {
+
+                /**
+                 * 4. Alert the element's content attribute,
+                 *    and fallback to defaultContent if falsy
+                 */
+
+            }
+        },
+
+        /**
+         * Callback: attachedCallback
+         * Event listeners are initialized after element is attached to DOM
+         */
+        attachedCallback: {
+            value: function () {
+                attachListeners.bind(this)();
+            }
+        }
+
+      })
+    });
+
+    /**
+     * Attaches click event
+     */
+    function attachListeners() {
+
+      this.addEventListener('click', function (e) {
+
+        if (this.click) {
+            this.click(e);
+        }
+
+      }, false);
+
+    }
+
+})(window, document);
+
+</script>

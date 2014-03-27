@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <style type="text/css">
+
+            /**
+             * Fixes for Flashes of Unstyled Content (FOUC)
+             */
+            tmg-button:unresolved {
+                opacity: 0;
+            }
+
+            tmg-button {
+                display: inline-block;
+                opacity: 1;
+                transition: opacity 1s linear;
+            }
+
+        </style>
+
+        <!-- Import tmg-button here -->
+        <link rel="import" href="tmg-button.html" id="tmg-button-import">
+
+    </head>
+
+    <body>
+
+        <h1>Workshop #1</h1>
+        <tmg-button title="Hello, world!" content="This is a message."></tmg-button>
+    </body>
+
+</html>

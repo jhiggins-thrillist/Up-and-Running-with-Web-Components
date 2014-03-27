@@ -163,7 +163,7 @@ body {
     #supported .unsupported:after {
       content: " \2718"; }
   #supported .supported {
-    color: green; }
+    color: #17ff2e; }
     #supported .supported:after {
       content: " \2713"; }
 

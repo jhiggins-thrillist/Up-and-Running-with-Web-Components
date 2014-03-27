@@ -1,0 +1,48 @@
+html, body {
+  height: 100%;
+  font-size: 100%;
+}
+
+body {
+  padding: 1em;
+  font-family: Helvetica, arial, sans;
+}
+
+ul {
+  line-height: 1.61em;
+}
+
+hr {
+  margin: 5em 0;
+}
+
+/**
+ * Fixes for Flashes of Unstyled Content (FOUC)
+ */
+tmg-button:before {
+  display: block;
+  clear: both;
+  font-weight: bold;
+  margin-top: 2em;
+  content: 'Our button:';
+}
+
+tmg-button {
+  display: inline-block;
+  opacity: 1;
+  transition: opacity 5s linear;
+}
+
+tmg-button:unresolved {
+  opacity: 0;
+}
+
+.mutation-wrapper {
+  clear: both;
+  display: block;
+  margin-top: 4em;
+}
+
+.mutation-wrapper:before {
+  content: 'Title changer:';
+}
